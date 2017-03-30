@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>mia_resume</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet">
+		<style type="text/css">
+		#row1{
+			margin-left: -15px;
+			margin-right: 15px;
+		}
+@media screen and (max-width: 768px) {
+	#row1{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+}
+			.chart {
+				position: relative;
+				display: inline-block;
+				width: 110px;
+				height: 110px;
+				margin-top: 40px;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			
+			.chart canvas {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.chart .percent {
+				color: #000000;
+				display: inline-block;
+				line-height: 110px;
+				z-index: 2;
+			}
+			
+			.chart .percent:after {
+				content: '%';
+				margin-left: 0.1em;
+				font-size: .8em;
+			}
+			
+			.title-border {
+				text-align: center;
+				padding: 30px 0;
+				margin-left:30px;
+				border-top: 1px solid #ebebeb;
+				border-bottom: 1px solid #ebebeb;
+			}
+			
+			.list-progress li {
+				padding: 20px 0;
+			}
+			
+			.list-progress li .title {
+				margin-bottom: 10px;
+			}
+			
+			.list-progress li .progress-line {
+				background: #fafafa;
+				border: 1px solid #ebebeb;
+				padding: 5px;
+			}
+			
+			.list-progress li .progress-line .line {
+				height: 3px;
+				background: black;
+				display: block;
+				width: 0;
+			}
+#navigation {
+	background: #fff;
+	z-index: 9999;
+	width:100%;
+    box-sizing:border-box;
+	border-bottom: 1px solid #eee;
+	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.nav.navbar-nav {
+    background-color: rgba(255,255,255,.6);
+}
+
+#menu .nav.navbar-bar {
+	text-align: center;
+	float: none;
+	margin: 0 auto;
+}
+
+.navbar-custom ul.nav {
+	text-align: center;
+	float: none;
+	margin: 0 auto;
+}
+.navbar-custom ul.nav li {
+	float: none;
+	display: inline-block;
+	text-align: center;
+}
+.navbar-custom ul.nav li a {
+	font-size: 14px;
+	letter-spacing: 1px;
+    color: #444;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+.title-border{
+		margin-right: 30px;
+	}
+@media screen and (max-width: 768px) {
+	.title-border{
+		margin-right: 30px;
+	}
+	#img img{
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#progress{
+	padding-right:45px;
+}
+}
+#wdzpz img{
+	margin-top: 15px;
+}
+
+
+
+		</style>
+	</head>
+
+	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+		
+		<div id="navigation">
+			<nav class="navbar navbar-custom" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div id="menu">
+								<ul class="nav navbar-nav">
+									<li class="active">
+										<a href="">首页</a>
+									</li>
+									<li>
+										<a href="#jbxi">基本信息</a>
+									</li>
+									<li>
+										<a href="#zyjl">职业经历</a>
+									</li>
+									<li>
+										<a href="#wdzpz">我的作品展</a>
+									</li>
+									<li>
+										<a href="#wdjn">我的技能</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<section id="jbxi" class="home-section">
+			<div class="container">
+				<div class="row col-md-8 col-md-offset-2">
+					<div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-3" style="padding:20px 0px 20px 0px;">
+						<img src="img/mia.jpg" class="img-responsive img-rounded" alt="" style="height:15rem;width: 80%;" />
+					</div>
+					<div class="col-md-6 col-xm-6" style="padding:15px 15px 15px 0;">
+						<p class="color-light" style="line-height: 2.2rem;">
+							<strong class="fix-width-100"><i class="fa fa-calendar margin-right-5"></i> 姓名</strong> : 唐萍<br>
+							<strong class="fix-width-100"><i class="fa fa-skype margin-right-5"></i> 英文名</strong> : mia<br>
+							<strong class="fix-width-100"><i class="fa fa-phone margin-right-5"></i> 出生年月</strong> :1992/11/12<br>
+							<strong class="fix-width-100"><i class="fa fa-envelope margin-right-5"></i> 电话</strong> : 18244993470<br>
+							<strong class="fix-width-100"><i class="fa fa-globe margin-right-5"></i> 学历</strong> : 本科<br>
+							<strong class="fix-width-100"><i class="fa fa-globe margin-right-5"></i> 求职意向</strong> : H5开发工程师<br>
+							<strong class="fix-width-100"><i class="fa fa-location-arrow margin-right-5"></i> 邮箱</strong> : mia_web@foxmail.com<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<div class="container home-section text-center" id="zyjl">
+
+			<h2 class="thick-heading" style="margin: 20px 0;">
+        职业经历
+      </h2>
+
+			<div class="featurette" id="about">
+				<div class="container">
+					<div class="row" id="row1">
+						<div class="timeline-centered">
+							<article class="timeline-entry" id="art1">
+
+								<div class="timeline-entry-inner">
+									<time class="timeline-time"><span>7~12月</span> <span>2015年</span></time>
+
+									<div class="timeline-icon bg-success">
+										<i class="entypo-feather"></i>
+									</div>
+
+									<div class="timeline-label">
+										<h2><a href="#">深圳市创思佳达科技有限公司</a> <span>外贸专员</span></h2>
+										<p>主要负责公司在阿里巴巴平台信息发布，产品更新以及业务的开发。</p>
+									</div>
+								</div>
+
+							</article>
+
+							<article class="timeline-entry left-aligned" id="art2">
+
+								<div class="timeline-entry-inner">
+									<time class="timeline-time"><span>2~7月</span> <span>2016年</span></time>
+
+									<div class="timeline-icon bg-secondary">
+										<i class="entypo-suitcase"></i>
+									</div>
+
+									<div class="timeline-label">
+										<h2><a href="#">广州蓝欧科技有限公司</a></h2>
+										<p>h5的专业培训</p>
+									</div>
+								</div>
+
+							</article>
+
+
+
+							<article class="timeline-entry begin">
+
+								<div class="timeline-entry-inner">
+
+									<div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+										<i class="entypo-flight"></i>
+									</div>
+
+								</div>
+
+							</article>
+
+							</div>
+						</div>
+				</div>		
+					
+		<section class="wow fadeInUp delay-05s home-section text-center" id="wdzpz">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="margin-bottom: 20px;">
+						<h2 class="title text-center">我的<span class="deco">作品</span>展</h2>
+					</div>
+					<div class="col-md-12">
+						<div id="img" class="">
+							<div class="col-md-4 col-sm-4">
+								<img src="img/p0.png" class="img-responsive">
+								<img src="img/p1.png" class="img-responsive">
+								<img src="img/p2.png" class="img-responsive">
+								<img src="img/p3.png" class="img-responsive">
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<img src="img/i3.png" class="img-responsive">
+								<img src="img/i1.png" class="img-responsive">
+								<img src="img/i2.png" class="img-responsive">
+								<img src="img/i4.png" class="img-responsive">
+								<img src="img/i5.png" class="img-responsive">
+								
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<img src="Lonely/img/img1.jpg" class="img-responsive">
+								<img src="Lonely/img/bg1.jpg" class="img-responsive">
+								<img src="Lonely/img/gallery/5.jpg" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="title-border home-section text-center" style="margin-top: 30px;" id="wdjn"> 
+			<h5 class="text-uppercase color-dark no-margin text-bold ">我的技能</h5>
+		</div>
+
+		<div class="container-medium home-section text-center">
+
+			<ul class="skill top list-unstyled clearfix">
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right br-bottom">
+						<span class="chart">
+                  <span class="percent">70</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">PHP</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right br-bottom">
+						<span class="chart">
+                  <span class="percent">95</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">HTML</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right br-bottom">
+						<span class="chart">
+                  <span class="percent">90</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">CSS</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-bottom">
+						<span class="chart">
+                  <span class="percent">60</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase color-dark">MYSQL</div>
+					</div>
+				</li>
+			</ul>
+
+
+			<ul class="skill bottom list-unstyled clearfix">
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right">
+						<span class="chart">
+                  <span class="percent">80</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">PS</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right">
+						<span class="chart">
+                  <span class="percent">90</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">JS</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box br-right">
+						<span class="chart">
+                  <span class="percent">85</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase  color-dark">JQ</div>
+					</div>
+				</li>
+				<li class="col-sm-3 col-xs-6 no-padding">
+					<div class="box">
+						<span class="chart">
+                  <span class="percent">77</span>
+						<canvas height="110" width="110"></canvas></span>
+						<div class="text-uppercase color-dark">BOOTSTRAP</div>
+					</div>
+				</li>
+			</ul>
+
+
+
+			<div class="title-border home-section text-center" style="margin-top: 30px;">
+				<h5 class="text-uppercase color-dark no-margin text-bold ">更多技能</h5>
+			</div>
+
+			<div class="container home-section" id="progress">
+				<div class="col-sm-6">
+					<ul class="list-unstyled list-progress">
+						<li>
+							<div class="text-uppercase color-dark title "><span>Ajax</span> <small>70%</small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="70%" style="width: 70%;"></div>
+							</div>
+						</li>
+						<li>
+							<div class="text-uppercase color-dark title">UI插件 <small>88%</small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="88%" style="width: 88%;"></div>
+							</div>
+						</li>
+						<li>
+							<div class="text-uppercase color-dark title">Swiper <small>75% </small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="75%" style="width: 75%;"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<ul class="list-unstyled list-progress">
+						<li>
+							<div class="text-uppercase color-dark title">Angular <small>60%</small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="60%" style="width: 60%;"></div>
+							</div>
+						</li>
+						<li>
+							<div class="text-uppercase color-dark title">Animation <small>90%</small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="90%" style="width: 90%;"></div>
+							</div>
+						</li>
+						<li>
+							<div class="text-uppercase color-dark title">英语 <small>80%</small></div>
+							<div class="progress-line">
+								<div class="line" data-holdwidth="80%" style="width: 80%;"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="white-space-50"></div>
+		</div>
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-lg-12">
+									<p>&copy; mia_99.com.</p>
+									<div class="credits">
+										<a href="###"></a> by
+										<a href="###">唐小萍</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<script src="js/jquery.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/jquery.easing.min.js"></script>
+					<script src="js/wow.min.js"></script>
+					<script src="js/custom.js"></script>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var canvas = document.getElementsByTagName("canvas");
+	var ctx = [];
+	for(var i = 0; i < canvas.length; i++) {
+		ctx[i] = canvas[i].getContext("2d");
+	}
+	var num = [];
+	for(var i = 0; i < canvas.length; i++) {
+		num[i] = $("canvas").eq(i).parent().children("span").text();
+	}
+	function Hua() {
+		this.x = 55;
+		this.y = 55;
+		this.r = 50;
+		this.angle = Math.PI / 180;
+	}
+	Hua.prototype.draw = function(ctxk, k) {
+		ctxk.beginPath();
+		ctxk.lineCap = "round";
+		ctxk.lineWidth = 6;
+		ctxk.strokeStyle = "#cfd7da";
+		ctxk.arc(this.x, this.y, this.r, -Math.PI / 2, this.angle * 3.6 * num[k] - (Math.PI / 2), true);
+		ctxk.stroke();
+		ctxk.closePath();
+		ctxk.beginPath();
+		ctxk.strokeStyle = "#5da4d9";
+		ctxk.arc(this.x, this.y, this.r, -Math.PI / 2, this.angle * 3.6 * num[k] - (Math.PI / 2), false);
+		ctxk.stroke();
+		ctxk.closePath();
+	}
+	for(var i = 0; i < canvas.length; i++) {
+		var c1 = new Hua();
+		c1.draw(ctx[i], i);
+	}
+</script>
